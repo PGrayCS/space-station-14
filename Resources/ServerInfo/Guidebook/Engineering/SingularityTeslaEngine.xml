@@ -3,7 +3,7 @@
 
   The Singularity Engine / Tesla Engine can yield [color=#a4885c]infinite power[/color] for the entire shift, making it a valuable asset to the station.
 
-  It can also [color=red]destroy the whole station[/color] with equal ease, and requires careful preparation and monitoring to prevent a [bold]loss[/bold].
+  It can also [color=red]destroy the whole station[/color] with equal ease, and requires careful preparation and monitoring to prevent a [bold]loose[/bold].
 
   # Setting it up
   Both engines follow the same basic setup steps, but have different subsystems and requirements.
@@ -54,7 +54,7 @@
 
   The emitters connect to MV cables, and fire lasers as long as they have power and are turned on.
 
-  It is recommended to [color=#a4885c]lock the emitters[/color] with [color=yellow][bold][keybind="AltActivateItemInWorld"][/bold][/color], to prevent any break-in no-gooders from losing the singularity or tesla by simply switching off the field.
+  It is recommended to [color=#a4885c]lock the emitters[/color] with [color=yellow][bold][keybind="AltActivateItemInWorld"][/bold][/color], to prevent any break-in no-gooders from loosing the singularity or tesla by simply switching off the field.
 
   ## Particle Accelerator
   The Particle Accelerator (PA) is a multi-tile structure that launches accelerated particles from its emitters.
