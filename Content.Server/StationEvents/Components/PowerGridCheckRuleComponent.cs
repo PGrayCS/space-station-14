@@ -9,12 +9,12 @@ namespace Content.Server.StationEvents.Components;
 public sealed partial class PowerGridCheckRuleComponent : Component
 {
     /// <summary>
-    /// Default sound of the announcement when power is back on.
+    ///     Default sound of the announcement when power is back on.
     /// </summary>
     private static readonly ProtoId<SoundCollectionPrototype> DefaultPowerOn = new("PowerOn");
 
     /// <summary>
-    /// Sound of the announcement to play when power is back on.
+    ///     Sound of the announcement to play when power is back on.
     /// </summary>
     [DataField]
     public SoundSpecifier PowerOnSound = new SoundCollectionSpecifier(DefaultPowerOn, AudioParams.Default.WithVolume(-4f));
@@ -25,6 +25,10 @@ public sealed partial class PowerGridCheckRuleComponent : Component
     public readonly List<EntityUid> Powered = new();
     public readonly List<EntityUid> Unpowered = new();
 
+    /// <summary>
+    ///     Number of seconds until all APCs are turned off. APCs are disabled at a rate calculated to finish within this time.
+    /// </summary>
+    [DataField]
     public float SecondsUntilOff = 30.0f;
 
     public int NumberPerSecond = 0;
