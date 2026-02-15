@@ -77,7 +77,8 @@ public sealed class StoreTests
             var mind = mindSystem.CreateMind(null);
             mindSystem.TransferTo(mind, human, mind: mind);
 
-            FixedPoint2 originalBalance = 20;
+            // Keep this comfortably above any discounted listing cost so the test never fails on affordability.
+            FixedPoint2 originalBalance = 100;
             uplinkSystem.AddUplink(human, originalBalance, null, true);
 
             var storeComponent = entManager.GetComponent<StoreComponent>(pda);
