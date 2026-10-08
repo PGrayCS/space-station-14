@@ -45,7 +45,7 @@ public abstract partial class SharedPowerStateSystem : EntitySystem
     public void TrySetWorkingState(Entity<PowerStateComponent?> ent, bool isWorking)
     {
         // Sometimes systems calling this API handle generic objects that can or can't consume power,
-        // so to reduce boilerplate we don't log an error. Any entity that *should* have an ApcPowerRecieverComponent
+        // so to reduce boilerplate we don't log an error. Any entity that *should* have an ApcPowerReceiverComponent
         // will log an error in tests if someone tries to add an entity that doesn't have one.
         if (!PowerStateQuery.Resolve(ent, ref ent.Comp, false))
             return;

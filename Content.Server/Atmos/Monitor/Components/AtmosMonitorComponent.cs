@@ -7,7 +7,7 @@ using Robust.Shared.Prototypes;
 public sealed partial class AtmosMonitorComponent : Component
 {
     // Whether this monitor can send alarms,
-    // or recieve atmos command events.
+    // or receive atmos command events.
     //
     // Useful for wires; i.e., pulsing a monitor wire
     // will make it send an alert, and cutting

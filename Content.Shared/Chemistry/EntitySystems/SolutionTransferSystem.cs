@@ -210,7 +210,7 @@ public sealed partial class SolutionTransferSystem : EntitySystem
             return;
 
         // Have to check again, in case something has changed.
-        if (!CanRecieve(ent, target, out var ownerSoln, out var targetSoln, out var solution))
+        if (!CanReceive(ent, target, out var ownerSoln, out var targetSoln, out var solution))
             return;
 
         RefillTransfer(new SolutionTransferData(args.User, target, targetSoln.Value, ent.Owner, ownerSoln.Value, args.Amount), solution);
@@ -227,7 +227,7 @@ public sealed partial class SolutionTransferSystem : EntitySystem
         return ent.Comp1.CanReceive && TryGetTransferrableSolutions(ent.Owner, target, out drainable, out refillable, out _);
     }
 
-    private bool CanRecieve(Entity<SolutionTransferComponent> ent,
+    private bool CanReceive(Entity<SolutionTransferComponent> ent,
         EntityUid source,
         [NotNullWhen(true)] out Entity<SolutionComponent>? drainable,
         [NotNullWhen(true)] out Entity<SolutionComponent>? refillable,

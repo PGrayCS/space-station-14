@@ -522,7 +522,7 @@ public sealed partial class ChatUIController : UIController
         // Can always send console stuff.
         CanSendChannels |= ChatSelectChannel.Console;
 
-        // can always send/recieve OOC
+        // can always send/receive OOC
         CanSendChannels |= ChatSelectChannel.OOC;
         CanSendChannels |= ChatSelectChannel.LOOC;
         FilterableChannels |= ChatChannel.OOC;

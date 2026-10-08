@@ -41,7 +41,7 @@ public sealed partial class ChatNotificationSystem : EntitySystem
     }
 
     /// <summary>
-    /// Triggered when the specified player recieves a chat notification event.
+    /// Triggered when the specified player receives a chat notification event.
     /// </summary>
     /// <param name="ent">The player receiving the chat notification.</param>
     /// <param name="args">The chat notification event</param>

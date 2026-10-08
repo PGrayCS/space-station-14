@@ -98,7 +98,7 @@ public sealed partial class AHelpUIController: UIController, IOnSystemChanged<Bw
     public void OnSystemLoaded(BwoinkSystem system)
     {
         _bwoinkSystem = system;
-        _bwoinkSystem.OnBwoinkTextMessageRecieved += ReceivedBwoink;
+        _bwoinkSystem.OnBwoinkTextMessageReceived += ReceivedBwoink;
 
         _input.SetInputCommand(ContentKeyFunctions.OpenAHelp,
             InputCmdHandler.FromDelegate(_ => ToggleWindow()));
@@ -109,7 +109,7 @@ public sealed partial class AHelpUIController: UIController, IOnSystemChanged<Bw
         _input.SetInputCommand(ContentKeyFunctions.OpenAHelp, null);
 
         DebugTools.Assert(_bwoinkSystem != null);
-        _bwoinkSystem!.OnBwoinkTextMessageRecieved -= ReceivedBwoink;
+        _bwoinkSystem!.OnBwoinkTextMessageReceived -= ReceivedBwoink;
         _bwoinkSystem = null;
     }
 

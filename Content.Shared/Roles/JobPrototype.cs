@@ -57,7 +57,7 @@ public sealed partial class JobPrototype : IPrototype
     public bool JoinNotifyCrew;
 
     /// <summary>
-    /// When true - the player will recieve a message about importancy of their job.
+    /// When true - the player will receive a message about importancy of their job.
     /// </summary>
     [DataField]
     public bool RequireAdminNotify;

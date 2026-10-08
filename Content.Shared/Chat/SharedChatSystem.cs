@@ -508,7 +508,7 @@ public abstract partial class SharedChatSystem : EntitySystem
     /// <summary>
     /// Dispatches an announcement to players selected by filter.
     /// </summary>
-    /// <param name="filter">Filter to select players who will recieve the announcement.</param>
+    /// <param name="filter">Filter to select players who will receive the announcement.</param>
     /// <param name="message">The contents of the message.</param>
     /// <param name="source">The entity making the announcement (used to determine the station).</param>
     /// <param name="sender">The sender (Communications Console in Communications Console Announcement).</param>
